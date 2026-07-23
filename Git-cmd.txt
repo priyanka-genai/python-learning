@@ -1,0 +1,9 @@
+git checkout main
+git pull
+git checkout -b feature-patterns
+git add .
+git commit -m "Add pattern programs"
+git push -u origin feature-patterns
+
+
+git switch -c Python
