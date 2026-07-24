@@ -1,10 +1,11 @@
 '''
 
 *********
- *******
-  *****
-   ***
+ *     *
+  *   *
+   * *
     *
+
 '''
 
 
@@ -17,8 +18,15 @@ for i in range(1, r + 1):
         print(" ", end="")
 
     # Print stars
-    for j in range(2 * (r - i) + 1):
+    if i == 1:
+        for j in range(2 * r - 1):
+            print("*", end="")
+    else:
         print("*", end="")
+        for j in range(2 * (r - i) - 1):
+            print(" ", end="")
+        if i != r:
+            print("*", end="")
 
     # Move to next row
     print()
