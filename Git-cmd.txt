@@ -1,5 +1,8 @@
 git checkout main
 git pull
+
+# To switch back to your new branch
+
 git checkout -b feature-patterns
 git add .
 git commit -m "Add pattern programs"
